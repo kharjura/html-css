@@ -1,0 +1,39 @@
+.nav-container {
+    background-color: blue;
+    color: white;
+    padding: 1.5rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-link {
+    display: flex;
+}
+.nav-link > a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.nav-link > svg {
+    width: 1.5rem;
+}
+
+@media screen and (min-width:361px) {
+    /*applies to screen size >= 768px */
+    .nav-link > svg {
+        display:none;
+    }
+    
+}
+
+@media screen and (max-width:360px) {
+    /*applies to screen size <= 360px */
+    .nav-link > a {
+        display: none;
+    }
+}
+    
+ 
+    

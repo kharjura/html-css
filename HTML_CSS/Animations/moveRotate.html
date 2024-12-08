@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: yellow;
+            animation-name: move-rotate;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes move-rotate {
+            0% {
+                transform: translateX(0px) rotate(0deg);
+            }
+            50% {
+                transform: translateX(200px) rotate(180deg);
+            }
+            100%{
+                transform: translateX(0px) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">I am a box</div>
+</body>
+</html>

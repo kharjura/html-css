@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .box {
+        width: 400px;
+        height: 400px;
+        background-color: violet;
+        margin-left: auto;
+        margin-right: auto;
+        animation-name: change-color;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+       }
+       @keyframes change-color {
+        from {
+            background-color: violet;
+        }
+        to{
+            background-color: yellow;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="box">I am a box</div>
+</body>
+</html>

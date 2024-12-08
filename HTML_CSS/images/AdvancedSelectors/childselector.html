@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*child selector is designation as > */
+        .child-box2 > .inner-child1{
+            background-color: red;
+        }
+        .parent-box >.child-box2 >.inner-child1{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent-box1">
+        <div class="child-box1">I am a box 1</div>
+        <div class="child-box2">
+          I am a box 2
+          <div class="inner-child1">inner child box1
+        </div>
+      </div>
+      <div class="parent-box2">
+        <div class="child-box1">I am a box 1</div>
+        <div class="child-box2">
+          I am a box 2
+          <div class="inner-child1">inner child box1 
+        </div>
+      </div>
+</body>
+</html>

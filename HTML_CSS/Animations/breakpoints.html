@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: yellow;
+            animation-name: change-bg;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes change-bg {
+            0% {
+                background-color: yellow;
+            }
+            25% {
+                background-color: purple;
+            }
+            50% {
+                background-color: blue;
+            }
+            75% {
+                background-color: green;
+            }
+            100% {
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">I am box</div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+      }
+      .grid-layout {
+        background-color: lightgrey;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr;
+        grid-template-rows: 0fr 6fr 1fr;
+        grid-template-areas:
+          "header header header"
+          "left main main"
+          "footer footer footer";
+        height: 100vh;
+      }
+      .header {
+        grid-area: header;
+      }
+      .grid-left {
+        grid-area: left;
+        background-color: blue;
+      }
+      .main {
+        grid-area: main;
+      }
+      .footer {
+        grid-area: footer;
+        background-color: black;
+        color: white;
+      }
+      .navbar {
+        color: white;
+        background-color: navy;
+        font-size: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .nav-link > a {
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+        padding: 5px;
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .item > img {
+        height: 10rem;
+        padding: 0.25rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-layout">
+      <div class="header">
+        <nav class="navbar">
+          <div class="nav-brand">My Name</div>
+          <div class="nav-link">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Gallery</a>
+          </div>
+        </nav>
+      </div>
+      <div class="grid-left">
+        <h3>My Art Gallery</h3>
+      </div>
+      <div class="main">
+        <div class="gallery">
+          <div class="item">
+            <img
+              src="https://cdn11.bigcommerce.com/s-x49po/images/stencil/1500x1500/products/123320/290517/handmade%2Fdownscaled%2Fyou2jiwIlv6MaPF3VhYX-Photo_2000x2000__74020.1692622445.jpg?c=2"
+              alt="err"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://cdn11.bigcommerce.com/s-x49po/images/stencil/1500x1500/products/123320/290517/handmade%2Fdownscaled%2Fyou2jiwIlv6MaPF3VhYX-Photo_2000x2000__74020.1692622445.jpg?c=2"
+              alt="err"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://cdn11.bigcommerce.com/s-x49po/images/stencil/1500x1500/products/123320/290517/handmade%2Fdownscaled%2Fyou2jiwIlv6MaPF3VhYX-Photo_2000x2000__74020.1692622445.jpg?c=2"
+              alt="err"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://cdn11.bigcommerce.com/s-x49po/images/stencil/1500x1500/products/123320/290517/handmade%2Fdownscaled%2Fyou2jiwIlv6MaPF3VhYX-Photo_2000x2000__74020.1692622445.jpg?c=2"
+              alt="err"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://cdn11.bigcommerce.com/s-x49po/images/stencil/1500x1500/products/123320/290517/handmade%2Fdownscaled%2Fyou2jiwIlv6MaPF3VhYX-Photo_2000x2000__74020.1692622445.jpg?c=2"
+              alt="err"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://cdn11.bigcommerce.com/s-x49po/images/stencil/1500x1500/products/123320/290517/handmade%2Fdownscaled%2Fyou2jiwIlv6MaPF3VhYX-Photo_2000x2000__74020.1692622445.jpg?c=2"
+              alt="err"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://cdn11.bigcommerce.com/s-x49po/images/stencil/1500x1500/products/123320/290517/handmade%2Fdownscaled%2Fyou2jiwIlv6MaPF3VhYX-Photo_2000x2000__74020.1692622445.jpg?c=2"
+              alt="err"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://cdn11.bigcommerce.com/s-x49po/images/stencil/1500x1500/products/123320/290517/handmade%2Fdownscaled%2Fyou2jiwIlv6MaPF3VhYX-Photo_2000x2000__74020.1692622445.jpg?c=2"
+              alt="err"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://cdn11.bigcommerce.com/s-x49po/images/stencil/1500x1500/products/123320/290517/handmade%2Fdownscaled%2Fyou2jiwIlv6MaPF3VhYX-Photo_2000x2000__74020.1692622445.jpg?c=2"
+              alt="err"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <h2>Footer here</h2>
+      </div>
+    </div>
+  </body>
+</html>

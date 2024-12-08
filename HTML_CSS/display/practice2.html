@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+          background-color: white;
+          padding: 10px;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          gap:30;
+          grid-template-areas: 
+          "your name"
+          "Home"
+          "About"
+          "Gallary"
+          "My Art Gallary"
+          "footer";
+        }
+        .grid-your name {
+            grid-area: your name;
+            background-color: blue;
+         }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-your name">your name</div>
+        <div class="grid-Home">Home</div>
+        <div class="grid-About">About</div>
+        <div class="grid-Gallary">Gallary</div>
+        <div class="grid-My Art Gallary">My Art Gallary</div>
+        <div class="grid-footer">footer</div>     
+    </div>
+</body>
+</html>

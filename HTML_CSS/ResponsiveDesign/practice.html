@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            height: 8rem;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+        .container > .left {
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .container > .right {
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        @media screen and(max-width:768px) {
+            .container > .left {
+                display: block;
+            }
+            .container > .right {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+    <div class="top">
+        <img src="image.jpg" alt=""/>
+    </div>
+    <div class="bottom">
+        <img src="image.jpg" alt=""/>
+    </div>
+    <div class="right">
+        <div class="top">
+        <img src="image.jpg" alt=""/>
+    </div>
+    <div class="bottom">
+        <img src="image.jpg" alt=""/>
+    </div>
+    </div>
+  </div>  
+</body>
+</html>
